@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>kasra071 - guess the color game</title>
+        <meta name="description"  content="">
+        <link rel="stylesheet" href="../src/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="../src/index.js" defer></script>
+        <script src="../src/jquery.js" defer></script>
+        <script src="../src/guessColor.js" defer></script>
+        <link rel="icon" href="https://dl.kasra071.com/v3_assets/icon_blue.jpg">
+        <meta charset="UTF-8">
+    </head>
+    <body onload="PageLoaded()">
+        <div id="Loader"></div>
+        
+        <div id="header"></div>
+        <div id="menu"></div>
+
+        <div id="main">
+            <div class="game_gcg_container">
+                <h1 class="Game_Title_GCG">guess the color game</h1>
+                    <h2 class="Game_dec_GCG">guess the color by its rgb-hex code</h2>
+                    <div class="center_GCG">
+                        <p class="Text_GCG">choose code: </p>
+                        <div class="button_option_GCG_dis" id="HEX_GCG_OPT"  onclick="ChangeGameMode(2)">HEX</div>
+                        <div class="button_option_GCG_dis" id="RGB_GCG_OPT"  onclick="ChangeGameMode(1)">RGB</div>
+                        <div class="button_option_GCG_dis" id="BOTH_GCG_OPT" onclick="ChangeGameMode(3)">BOTH</div>
+
+                        <p class="Text_GCG">choose difficulty: </p>
+                        <div class="button_option_GCG_dis" id="EAS_GCG_OPT"  onclick="Changedifficulty(1)">easy</div>
+                        <div class="button_option_GCG_dis" id="NOR_GCG_OPT"  onclick="Changedifficulty(2)">normal</div>
+                        <div class="button_option_GCG_dis" id="HAR_GCG_OPT" onclick="Changedifficulty(3)">hard</div>
+
+                        <div class="PLAY_CON_GCG">
+                            <p class="Text_GCG3">score: <span id="score_GCG"></span></p>
+                            <p class="Text_GCG2">difficulty: <span id="dif_GCG"></span></p>
+                            <p class="Text_GCG2">code: <span id="code_GCG"></span></p>
+                            <button class="PLAYBTN_GCG" onclick="Play()" id="play_button_id">PLAY</button>
+                        </div>
+
+                    </div>
+
+                    <div id="game_container">
+
+                        <div id="win_lose_game">
+
+                        </div>
+                        <div id="game_title">
+
+                        </div>
+                        <div id="timer_div">
+
+                        </div>
+
+                        <div id="colors_container">
+
+                        </div>
+                        <div id="play_again">
+
+                        </div>
+
+                    </div>
+                    <div style="height:700px"></div>
+
+                </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

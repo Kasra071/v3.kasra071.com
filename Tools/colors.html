@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>kasra071 - colors</title>
+        <meta name="description"  content="">
+        <link rel="stylesheet" href="../src/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="../src/index.js" defer></script>
+        <link rel="icon" href="https://dl.kasra071.com/v3_assets/icon_blue.jpg">
+        <meta charset="UTF-8">
+    </head>
+    <body onload="PageLoaded('colors')">
+        <div id="Loader"></div>
+        
+        <div id="header"></div>
+        <div id="menu"></div>
+
+        <div id="main">
+            <div class="Tool_Main_Con">
+                <h1 class="Tool_first_title" style="color:red" id="color_si_error"></h1>
+
+                <div class="colors_colorshower"><p>white text</p><p>black text</p></div>
+
+                <div class="Colors_ItemsShow">
+                    <button class="color_random" onclick="Random_Color()">Genrate a random color</button>
+                    <div class="hex_color_container">
+                    <span class="span_colors">Hex : </span> <input type="text" value="#000000" class="Hex_colors_input" onchange="colorCync_HEX()">
+                    </div>
+                    <span class="span_colors">RGB : </span>
+                    <div class="rgb_color_container"><input type="number" value="0" class="RGB_colors_input" id="red_number" min="0" max="255" onchange="colorCync_RGB_NUMBER()"><input type="range" value="0" class="RGB_colors_range" id="red_range" min="0" max="255" oninput="colorCync_RGB_RANGE()"></div>
+                    <div class="rgb_color_container"><input type="number" value="0" class="RGB_colors_input" id="green_number" min="0" max="255" onchange="colorCync_RGB_NUMBER()"><input type="range" value="0" class="RGB_colors_range" id="green_range" min="0" max="255" oninput="colorCync_RGB_RANGE()"></div>
+                    <div class="rgb_color_container last-rgb"><input type="number" value="0" class="RGB_colors_input" id="blue_number" min="0" max="255" onchange="colorCync_RGB_NUMBER()"><input type="range" value="0" class="RGB_colors_range" id="blue_range" min="0" max="255" oninput="colorCync_RGB_RANGE()"></div>
+                    <span class="RGB_color_shower">rgb(0 , 0 , 0)</span>
+                    <div class="html_color_container">
+                    <span class="span_colors">use html to pick color : </span>
+                    <input type="color" class="color_color_input" value="#ffffff" onchange="colorCync_HTML()">
+                    </div>
+                </div>
+                <div style="height:400px"></div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>kasra071 - number base convertor</title>
+        <meta name="description"  content="">
+        <link rel="stylesheet" href="../src/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="../src/index.js" defer></script>
+        <link rel="icon" href="https://dl.kasra071.com/v3_assets/icon_blue.jpg">
+        <meta charset="UTF-8">
+    </head>
+    <body onload="PageLoaded('num_con')">
+        <div id="Loader"></div>
+        
+        <div id="header"></div>
+        <div id="menu"></div>
+
+        <div id="main">
+            <div class="Tool_Main_Con">
+                <div class="numbers_part">
+                    <span class="main_numbers_text">
+                    convert numbers from
+                    <div class="first_numbersel">
+                    <select id="convert_from" class="numbers_select" onchange="numbers_changed_input_type()">
+                        <option value='2'>base 2</option>
+                        <option value='3'>base 3</option>
+                        <option value='4'>base 4</option>
+                        <option value='5'>base 5</option>
+                        <option value='6'>base 6</option>
+                        <option value='7'>base 7</option>
+                        <option value='8'>base 8</option>
+                        <option value='9'>base 9</option>
+                        <option value='10'>base 10</option>
+                        <option value='11'>base 11</option>
+                        <option value='12'>base 12</option>
+                        <option value='13'>base 13</option>
+                        <option value='14'>base 14</option>
+                        <option value='15'>base 15</option>
+                        <option value='16'>base 16</option>
+                        <option value='17'>base 17</option>
+                        <option value='18'>base 18</option>
+                        <option value='19'>base 19</option>
+                        <option value='20'>base 20</option>
+                        <option value='21'>base 21</option>
+                        <option value='22'>base 22</option>
+                        <option value='23'>base 23</option>
+                        <option value='24'>base 24</option>
+                        <option value='25'>base 25</option>
+                        <option value='26'>base 26</option>
+                        <option value='27'>base 27</option>
+                        <option value='28'>base 28</option>
+                        <option value='29'>base 29</option>
+                        <option value='30'>base 30</option>
+                        <option value='31'>base 31</option>
+                        <option value='32'>base 32</option>
+                        <option value='33'>base 33</option>
+                        <option value='34'>base 34</option>
+                        <option value='35'>base 35</option>
+                        <option value='36'>base 36</option>
+                    </select>
+                    to
+                    <select id="convert_to" class="numbers_select" onchange="numbers_changed_output_type()">
+                        <option value='2'>base 2</option>
+                        <option value='3'>base 3</option>
+                        <option value='4'>base 4</option>
+                        <option value='5'>base 5</option>
+                        <option value='6'>base 6</option>
+                        <option value='7'>base 7</option>
+                        <option value='8'>base 8</option>
+                        <option value='9'>base 9</option>
+                        <option value='10'>base 10</option>
+                        <option value='11'>base 11</option>
+                        <option value='12'>base 12</option>
+                        <option value='13'>base 13</option>
+                        <option value='14'>base 14</option>
+                        <option value='15'>base 15</option>
+                        <option value='16'>base 16</option>
+                        <option value='17'>base 17</option>
+                        <option value='18'>base 18</option>
+                        <option value='19'>base 19</option>
+                        <option value='20'>base 20</option>
+                        <option value='21'>base 21</option>
+                        <option value='22'>base 22</option>
+                        <option value='23'>base 23</option>
+                        <option value='24'>base 24</option>
+                        <option value='25'>base 25</option>
+                        <option value='26'>base 26</option>
+                        <option value='27'>base 27</option>
+                        <option value='28'>base 28</option>
+                        <option value='29'>base 29</option>
+                        <option value='30'>base 30</option>
+                        <option value='31'>base 31</option>
+                        <option value='32'>base 32</option>
+                        <option value='33'>base 33</option>
+                        <option value='34'>base 34</option>
+                        <option value='35'>base 35</option>
+                        <option value='36'>base 36</option>
+                    </select>
+                    </div>
+                    </span>
+                    <div class="numbers_input_con"><span class="main_numbers_text" id="input_text_nums">Base 2 </span><input oninput="numbers_input_sync()" id="numbers_input" class="input_numbers" type="text" placeholder="Base 2"></div>
+                    <div class="numbers_input_con"><span class="main_numbers_text" id="output_text_nums">Base 2 </span><input oninput="numbers_output_sync()" id="numbers_output" class="input_numbers" type="text" placeholder="Base 2"></div>
+                    </div>
+                    <div style="height:500px"></div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

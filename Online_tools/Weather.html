@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>kasra071 - Weather</title>
+        <meta name="description"  content="">
+        <link rel="stylesheet" href="../src/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="../src/index.js" defer></script>
+        <script src="../src/Weather.js" defer></script>
+        <link rel="icon" href="https://dl.kasra071.com/v3_assets/icon_blue.jpg">
+        <meta charset="UTF-8">
+    </head>
+    <body onload="PageLoaded()">
+        <div id="Loader"></div>
+        
+        <div id="header"></div>
+        <div id="menu"></div>
+
+        <div id="main">
+            <div class="weather_online_container">
+                <h1 class="online_tools_title">Weather</h1>
+                <div class="weather_search_part">
+                <input type="text" placeholder="city name" id="city_input">
+                <button class="online_tools_btn w_S" onclick="add_city()">
+                <span>ADD</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+                </button>
+                <button class="online_tools_btn w_S_L" onclick="MyLoc()">
+                    <span>ADD USING MY LOCATION</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M168.3 499.2C116.1 435 0 279.4 0 192C0 85.96 85.96 0 192 0C298 0 384 85.96 384 192C384 279.4 267 435 215.7 499.2C203.4 514.5 180.6 514.5 168.3 499.2H168.3zM192 256C227.3 256 256 227.3 256 192C256 156.7 227.3 128 192 128C156.7 128 128 156.7 128 192C128 227.3 156.7 256 192 256z"/></svg>                    
+                </button>
+                <span id="error_weather"></span>
+
+                </div>
+                <div id="city_container">
+
+                </div>
+                <div style="height:300px"></div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

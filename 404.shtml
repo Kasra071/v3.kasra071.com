@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>404 Not Found</title>
+        <meta name="description"  content="">
+        <link rel="stylesheet" href="https://v3.kasra071.com/src/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="https://v3.kasra071.com/src/index.js" defer></script>
+        <link rel="icon" href="https://dl.kasra071.com/v3_assets/icon_blue.jpg">
+        <meta charset="UTF-8">
+    </head>
+    <body onload="PageLoaded()">
+        <div id="Loader"></div>
+        
+        <div id="header"></div>
+        <div id="menu"></div>
+
+        <div id="main">
+            <div class="error_main">
+                <div class="error_container">
+                    <h1>404 Not Found</h1>
+                    <p>The requested URL was not found on this server.</p>
+                    <img src="https://dl.kasra071.com/v3_assets/404.png" />
+                    <a href="https://v3.kasra071.com">Home Page</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

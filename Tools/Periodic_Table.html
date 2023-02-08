@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>kasra071 - Periodic Table</title>
+        <meta name="description"  content="">
+        <link rel="stylesheet" href="../src/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="../src/index.js" defer></script>
+        <link rel="icon" href="https://dl.kasra071.com/v3_assets/icon_blue.jpg">
+        <meta charset="UTF-8">
+    </head>
+    <body onload="PageLoaded('Periodic_Table')">
+        <div id="Loader"></div>
+        
+        <div id="header"></div>
+        <div id="menu"></div>
+
+        <div id="main">
+            <div class="Per_Tab_Container">
+                <h1 class="Tool_first_title">Periodic Table</h1>
+                <h2 class="Tool_first_title" id="perTab_error"></h2>
+
+
+                <div id="PerTab_Header_Container">
+                    <p class="Goto_PerTab">Go To atom</p>
+                    <input type="number" min="1" max="119" id="Per_Tab_Goto_Input" placeholder="1"/>
+                    <button onclick="Period_Table_Goto()" class="PerTab_Button">Go !</button>
+                </div>
+
+                <div id="PerTab_Table_Container">
+                    <table id="Periodic_Table_Content">
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

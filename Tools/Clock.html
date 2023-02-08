@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>kasra071 - digital clock</title>
+        <meta name="description"  content="">
+        <link rel="stylesheet" href="../src/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="../src/index.js" defer></script>
+        <script src="../src/jquery.js" defer></script>
+        <script src="../src/clock.js" defer></script>
+        <link rel="icon" href="https://dl.kasra071.com/v3_assets/icon_blue.jpg">
+        <meta charset="UTF-8">
+    </head>
+    <body onload="PageLoaded('clock')" class="clock_body">
+        <div id="Loader"></div>
+
+        <div id="main">
+            <div class="clock_side_digital_nav">
+                <img class="clock_settings_closer" alt="settings close" src="https://dl.kasra071.com/v3_assets/close.svg" onclick="settingsClose()">
+                <span class="clock_h24">24 format <input type="checkbox" id="h24" onchange="formatChange()"></span>
+                <span class="clock_h24">show date <input type="checkbox" id="data24" onchange="dateChange()"></span>
+                <span class="clock_h25">show back button <input type="checkbox" id="back24" onchange="backChange()"></span>
+                <span class="clock_h25">show settings button<input type="checkbox" id="set24" onchange="SettingsChange()"></span>
+            </div>
+    
+            <div class="clock_main" id="main-page">
+                <span onclick="history.back()" class="clock_back_btn" id="back_button">Go Back</span>
+    
+                <img id="settings_button" class="clock_settings-opener" src="https://dl.kasra071.com/v3_assets/settings.svg" alt="digital clock settings" onclick="settingsOpen()">
+    
+                <div class="clock_clock">
+                    <span id="clock_show">00:00:00</span>
+                    <span id="date_show">2022/12/30 thu</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
